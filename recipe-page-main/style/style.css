@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    width: auto;
+}
+
+body{
+    font-family: Young Serif, Outfit;
+    font-weight: 400;
+    font-size: 16px;
+    background: #F3E5D8;
+}
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
