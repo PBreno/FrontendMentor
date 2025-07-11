@@ -18,13 +18,15 @@ body{
 
 .container{
     background: #ffff;
-
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.image img {
-
+img {
+    background: red;
     border-radius: 15px;
-    margin: 20px;
+    width: 750px;
+    height: 350px;
 }
 
 .card-description p{
@@ -33,4 +35,12 @@ body{
 }
 p {
     font-size: 16px;
+}
+
+section.card-prepartion {
+    background: hsl(330, 100%, 98%);
+}
+
+h3.preparation {
+    color: hsl(332, 51%, 32%);
 }
