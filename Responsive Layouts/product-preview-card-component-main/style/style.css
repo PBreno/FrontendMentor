@@ -1,24 +1,47 @@
 * {
     margin: 0;
     width: auto;
-    height: auto;
 }
 
 body {
     background: hsl(30, 38%, 92%);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 100vh;
+
 }
 
 .container {
     background: hsl(0, 0%, 100%);
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 43vh;
 }
 
 .image .img-mobile {
     display: none;
+}
+
+.image .img-desktop {
+    width: 250px;
+    height: 355px;
+}
+
+.container .parfum-card {
+    margin: 30px;
+}
+
+p {
+    margin: 20px;
+}
+
+h1  {
+    width: 210px;
+}
+.description p {
+    width: 350px;
 }
