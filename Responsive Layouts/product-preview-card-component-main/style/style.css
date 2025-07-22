@@ -1,6 +1,10 @@
 * {
     margin: 0;
     width: auto;
+    font-family: "Montserrat", "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -25,23 +29,51 @@ body {
 .image .img-mobile {
     display: none;
 }
-
+.image {
+}
 .image .img-desktop {
     width: 250px;
-    height: 355px;
+    height: 360px;
 }
 
 .container .parfum-card {
-    margin: 30px;
+    padding: 0 15px;
+    margin: 0 15px;
 }
 
 p {
-    margin: 20px;
+    margin: 0 15px 15px 0;
 }
 
 h1  {
     width: 210px;
+    margin-bottom: 15px;
 }
+
+.price-line {
+    display: flex;
+    flex-direction: row;
+}
+
 .description p {
-    width: 350px;
+    font-weight: 200;
+}
+
+.price-line .discount-price{
+    color:  hsl(158, 42%, 18%);
+    font-weight: bold;
+}
+.price-line .real-price{
+    text-decoration: line-through;
+}
+.description {
+    width: 240px;
+}
+
+button {
+    background:  hsl(158, 42%, 18%);
+    color:  hsl(0, 0%, 100%);
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
 }
