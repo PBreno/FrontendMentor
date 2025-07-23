@@ -23,7 +23,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 43vh;
+    height: 45vh;
 }
 
 .image .img-mobile {
@@ -33,7 +33,7 @@ body {
 }
 .image .img-desktop {
     width: 250px;
-    height: 360px;
+    height: 373px;
 }
 
 .container .parfum-card {
@@ -61,19 +61,31 @@ h1  {
 
 .price-line .discount-price{
     color:  hsl(158, 42%, 18%);
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 25px;
 }
 .price-line .real-price{
     text-decoration: line-through;
+    font-weight: 250;
+    padding: 5px;
 }
 .description {
-    width: 240px;
+    width: 270px;
 }
 
 button {
     background:  hsl(158, 42%, 18%);
     color:  hsl(0, 0%, 100%);
-    width: 150px;
+    width: 225px;
     height: 35px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon{
+    margin-right: 10px;
 }
