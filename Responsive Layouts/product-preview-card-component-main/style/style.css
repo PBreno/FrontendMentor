@@ -23,7 +23,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 45vh;
 }
 
 .image .img-mobile {
@@ -48,6 +47,7 @@ p {
 h1  {
     width: 210px;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .price-line {
@@ -56,7 +56,6 @@ h1  {
 }
 
 .description p {
-    font-weight: 200;
 }
 
 .price-line .discount-price{
@@ -64,9 +63,12 @@ h1  {
     font-weight: bolder;
     font-size: 25px;
 }
+
+.price-line .real-price , .description p, p{
+    color: #6e6e6e;
+}
 .price-line .real-price{
     text-decoration: line-through;
-    font-weight: 250;
     padding: 5px;
 }
 .description {
@@ -74,10 +76,10 @@ h1  {
 }
 
 button {
-    background:  hsl(158, 42%, 18%);
+    background:  hsl(158, 36%, 37%);
     color:  hsl(0, 0%, 100%);
-    width: 225px;
-    height: 35px;
+    width: 235px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -88,4 +90,29 @@ button {
 
 .btn-icon{
     margin-right: 10px;
+}
+
+button:hover {
+    background:  hsl(158, 42%, 18%);
+}
+
+@media (max-width: 375px) {
+
+    body {
+        background: red;
+    }
+    .image .img-desktop {
+        display: none;
+    }
+
+    .container .parfum-card {
+        margin: 15px;
+    }
+
+    .image .img-mobile {
+        display: block;
+        height: 270px;
+        width: 300px;
+    }
+
 }
