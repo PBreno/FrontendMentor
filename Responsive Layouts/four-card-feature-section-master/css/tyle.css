@@ -16,3 +16,47 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+section .card{
+    border: 1px solid ;
+    display: block;
+    padding: 30px;
+    width: 350px;
+}
+
+img {
+    left: 270px;
+    position: relative;
+    top: 50px;
+}
+
+.container .cards {
+    display: grid;
+    grid-template:
+        "card-team-builder" 250px
+        "card-supervisor" 250px
+        "card-calculator" 250px;
+}
+
+
+.cards .card {
+    margin: 5px;
+}
+.cards .card .card-supervisor {
+    box-shadow: 0 -5px 0 0 #FF3D3D;
+}
+
+.cards .card .card-team-builder {
+
+}
+
+.cards .card .card-calculator {
+
+}
+
+.cards .card .card-karmar {
+
+}
+.card-supervisor , .card-calculator {
+    grid-row: span;
+}
