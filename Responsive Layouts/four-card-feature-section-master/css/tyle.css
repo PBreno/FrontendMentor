@@ -42,21 +42,35 @@ img {
 .cards .card {
     margin: 5px;
 }
-.cards .card .card-supervisor {
-    box-shadow: 0 -5px 0 0 #FF3D3D;
+
+.cards .card.card-supervisor {
+    box-shadow: 0 -5px 0 0 hsl(0, 78%, 62%);
 }
 
-.cards .card .card-team-builder {
-
+.card.card-team-builder {
+    box-shadow: 0 -5px 0 0 hsl(180, 62%, 55%);
+}
+.card.card-calculator {
+    box-shadow: 0 -5px 0 0 hsl(212, 86%, 64%);
 }
 
-.cards .card .card-calculator {
-
-}
-
-.cards .card .card-karmar {
-
+.card.card-karmar {
+    box-shadow: 0 -5px 0 0 hsl(34, 97%, 64%);
 }
 .card-supervisor , .card-calculator {
     grid-row: span;
+}
+
+.card.row-cards {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: start;
+}
+
+.card.column-cards {
+    display: grid;
+    /* grid-auto-columns: 115px; */
+    grid-auto-flow: row;
+    margin: 15px;
+    /* grid-auto-rows: 252px; */
 }
